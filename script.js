@@ -1,11 +1,11 @@
 const video = document.getElementById("video");
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri("/MoodFlix/models"),
-  faceapi.nets.faceLandmark68Net.loadFromUri("/MoodFlix/models"),
-  faceapi.nets.faceRecognitionNet.loadFromUri("/MoodFlix/models"),
-  faceapi.nets.faceExpressionNet.loadFromUri("/MoodFlix/models"),
-  faceapi.nets.ageGenderNet.loadFromUri("/MoodFlix/models"),
+  faceapi.nets.tinyFaceDetector.loadFromUri("./models"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("./models"),
+  faceapi.nets.faceRecognitionNet.loadFromUri("./models"),
+  faceapi.nets.faceExpressionNet.loadFromUri("./models"),
+  faceapi.nets.ageGenderNet.loadFromUri("./models"),
 ]).then(webCam);
 
 function webCam() {
